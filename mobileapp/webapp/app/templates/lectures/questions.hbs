@@ -1,0 +1,14 @@
+<!-- redirect to lecturesp age -->
+{{#link-to 'lectures' id="backbutton" class="ui-btn ui-icon-back ui-btn-icon-left"}}Back{{/link-to}}
+<h2>Questions</h2>
+	<ul>
+		<!-- loop through questions -->
+  		{{#each}}
+    		<li>{{question}}</li><!-- displays question -->
+  		{{/each}}
+		<form {{action 'add_question'}}><!-- Form to add question -->
+			<!-- question input -->
+			{{input id="new_question" type="text" value=newQuestion placeholder="Question"}} 
+			<input id="add_question" type="submit" value="Add"/><!-- submit form -->
+		</form>
+	</ul>

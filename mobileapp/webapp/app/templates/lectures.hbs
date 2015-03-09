@@ -1,0 +1,18 @@
+<div data-role="page" id="container"><!-- App container -->
+	<header data-role="header" id="appheader"><!-- App header -->
+    	<h1>Lectures</h1>
+  	</header>
+  	<div class="ui-content"><!-- App content -->
+		<!-- link to add a lecture -->
+		{{#link-to 'lectures.add' id="addbutton" class='ui-btn ui-icon-plus ui-btn-icon-left ui-btn-left'}}Add{{/link-to}}
+    	<ul data-role="listview" data-inset="true"><!-- Lectures list -->
+			<!-- Loops through each lecture -->
+      		{{#each}}
+				<!-- Links to questions page -->
+      			<li>{{#link-to 'lectures.questions'}}{{title}}{{/link-to}}</li>
+      		{{/each}}
+    	</ul>
+		<!-- Opens either add lecture or questions page -->
+    	{{outlet}}
+  	</div>
+</div>

@@ -1,0 +1,9 @@
+<form {{action 'add_lecture' on="submit"}}><!-- Form to add lecture -->
+	<!-- lecture title -->
+  	{{input type="text" id="new_lecture" value=newLecture placeholder="Lecture Name"}}
+	<!-- lecture date -->
+	{{input type="text" id="new_date" value=newDate placeholder="DD/MM/YYYY"}}
+	<!-- redirect to lecturesp age -->
+	{{#link-to 'lectures' class="ui-btn ui-icon-back ui-btn-icon-left"}}Don't add{{/link-to}}
+	<input type="submit" value="Add" class="ui-btn ui-icon-plus ui-btn-icon-left"/><!-- submit form -->
+</form>

@@ -1,0 +1,64 @@
+html, body {
+  	margin: 20px;
+}
+.ui-content-a {
+	text-decoration:none !important;
+}
+#container {
+	background-color:#000;
+	background:rgb(2,2,2);  
+	background:-moz-linear-gradient(top,  rgb(2,2,2) 0%, rgb(38,43,50) 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(2,2,2)), color-stop(100%,rgb(38,43,50))); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top,  rgb(2,2,2) 0%,rgb(38,43,50) 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top,  rgb(2,2,2) 0%,rgb(38,43,50) 100%); /* Opera 11.10+ */
+	background:-ms-linear-gradient(top,  rgb(2,2,2) 0%,rgb(38,43,50) 100%); /* IE10+ */
+}
+#appheader {
+	background-color:#000;
+	border-bottom:medium solid #FD6064;
+	text-shadow:0 0 0 !important; 
+	font-weight:lighter !important;
+	font-size:30px !important;
+}
+h1 {
+	color:#FFF;
+}
+#addbutton {
+	background-color:#000;	
+	color:#FFF;
+	top:-5px;
+	left:0;
+	width:50px;
+	border:none;
+	text-shadow:0 0 0 !important; 
+	font-weight:100 !important;
+	font-size:24px !important;
+}
+#addbutton:hover {
+	background-color:#666;
+}
+.ui-content {
+	padding:0px;
+	color:#FFF !important;
+	text-shadow:0 0 0 !important;
+	font-weight:100 !important;
+}
+.ui-listview>li a {
+	background-color:transparent !important;
+	border:none !important;
+	text-shadow:0 0 0 !important; 
+	font-weight:100 !important;
+	font-size:24px !important;
+	color:#FFF !important;
+	border-bottom:thin solid #FD6064 !important;
+}
+.ui-listview>li a:hover {
+	background-color:#FD5357 !important;
+	color:#FFF !important;
+}
+.ui-corner-all {
+	border-radius: 0px;
+}
+ul-all {
+	color:#FFF;
+}

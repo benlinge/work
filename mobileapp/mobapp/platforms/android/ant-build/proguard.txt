@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:6
+-keep class uk.co.ehustudent.ehu21995575.askapp.CordovaApp { <init>(...); }
+

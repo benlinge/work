@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<title>Webapp</title>
+    	<meta name="description" content="">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	{{content-for 'head'}}
+
+    	<link rel="stylesheet" href="assets/vendor.css">
+    	<link rel="stylesheet" href="assets/webapp.css">
+
+    	{{content-for 'head-footer'}}
+  	</head>
+  	<body>
+  		<div id="application"><!-- Ask App application container -->
+  		</div>
+    
+    	{{content-for 'body'}}
+	
+    	<script src="cordova.js"></script><!-- Cordova Files -->
+    	<script src="assets/vendor.js"></script><!-- Vendor Files -->
+    	<script src="assets/webapp.js"></script><!-- Application Files -->
+
+    	{{content-for 'body-footer'}}
+  	</body>
+</html>
